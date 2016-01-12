@@ -1,0 +1,207 @@
+/*----------------------------------------------------------*/
+/* Si Senor													*/
+/* CSS name: page.css										*/
+/* Developer: MindPick Software LLC							*/
+/* Date: 11/14/2011											*/
+/*															*/
+/* Description: Style sheet for elements specific to	  	*/
+/* 		individual pages (i.e., not all pages) with all 	*/
+/*      media.												*/
+/*----------------------------------------------------------*/
+
+/*----------------------------------*/
+/* Styles for the Home page.	 	*/
+/*----------------------------------*/
+
+/* Center the "Bienvenidos!" */
+#welcome {
+	text-align: center;
+	margin: 30px 0 0 137px;
+}
+
+#home_text {
+	margin-left: 145px;
+}
+
+/* Set up the slide show. */
+#photo_frame {
+	width: 210px;
+	height: 168px;
+	background-color: #a52a2a;
+	margin: 0 auto 50px;
+	padding: 6px;
+}
+
+#home_photos {
+	margin: 0;
+}
+
+/* Only show the static photo, via JavaScript, if 
+   swfobject doesn't load Flash. */
+
+#no_flash_photo {                  
+	display: none;
+}
+
+/*------------------------------*/
+/* Styles for Info page.		*/
+/*------------------------------*/
+
+/* The Info page must be wider than the others to accommodate the map.	*/
+#info #page_body {
+	min-width: 1000px;
+}
+
+
+* html #info #page_body {
+	width: 1000px;		/* hack: don't use fluid layout for IE6 */
+	overflow: hidden;
+}
+
+.storefront {
+	margin: 0 10px 10px;
+	background-color: #A52A2A;
+	border-top: 6px solid #A52A2A;
+	border-right: 6px solid #A52A2A;
+	border-left: 6px solid #A52A2A;
+}
+
+#creditcards {
+	margin: 0 0 0 173px;
+}
+
+#dir_instr {   	 /* Hide map instructions until map drawn. 	*/
+	display: none;
+}
+
+#map {
+	height: 620px;
+	margin: 0 auto;
+	color: black;
+	clear: both;
+}
+
+/*------------------------------*/
+/* Styles for About page.		*/
+/*------------------------------*/
+#crew {
+	text-align: center;
+	padding: 30px 0;
+}
+
+#crew_photo {
+	border: 6px solid #a52a2a;
+}
+
+/*----------------------------------*/
+/* Styles for the Specials page.	*/
+/*----------------------------------*/
+
+#specials_list {
+	margin: 24px 0 0 145px;
+	text-align: center;
+}
+
+.specials_frame {
+	display: block;
+	width: 262px;
+	margin: 0 auto;
+	background-color: #a52a2a;
+}
+
+.specials_photo {
+	float: left;
+	margin: 6px 6px 0;
+}
+
+.special_day {
+	color: #bb0000;
+	font: italic bold 1.3em "Times New Roman", Times, serif;
+}
+
+.special_bev1 {
+	display: block;
+	margin: .6em 0 0;
+}
+
+/*------------------------------*/
+/* Styles for Margaritas page.	*/
+/*------------------------------*/
+
+#marg_description {
+	display: block;
+	overflow: hidden;
+	_overflow: visible;	/* IE6 Hack: otherwise entire div hidden	*/
+	height: 1%;		/* Give a height so Safari 3+, IE6 center */
+}
+
+.left_marg_frame, .right_marg_frame {
+	display: inline;
+	width: 120px;
+	background-color: #a52a2a;
+}
+
+.left_marg_frame {
+	float: left;
+	margin: 0 10px 0 65px;
+}
+
+.right_marg_frame {
+	float: right;
+	margin: 0 65px 0 10px;
+}
+
+.marg_photo {
+	margin: 6px 6px 0;
+}
+
+#marg_prices {
+	margin: 15px auto;
+	text-align: center;
+}
+
+#marg_menu {
+	text-align: center;
+}
+
+.clear_w_height {     /* Give height so Safari, Opera allow text centering. */
+	clear: both;
+	height: 1px;
+}
+
+.vert_center_marg {
+	margin: 55px 5% 0;
+}
+
+/*------------------------------*/
+/* Styles for Glossary page.	*/
+/*------------------------------*/
+
+body#glossary dl {
+	margin-left: 145px;
+}
+
+body#glossary dt {
+	margin-top: 1em;
+	font-weight: bold;
+	color: #003300;
+}
+
+/*------------------------------*/
+/* Styles for Sitemap page.		*/
+/*------------------------------*/
+
+body#sitemap dt a {
+	color: #003300;
+	font-weight: bold;
+}
+
+body#sitemap dt {
+	margin-left: 145px;
+}
+
+body#sitemap dd {
+	padding: 0 0 1em;
+	margin-left: 175px;
+}
+

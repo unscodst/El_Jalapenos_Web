@@ -1,0 +1,201 @@
+/*----------------------------------------------------------*/
+/* Fiesta Jalapenos											*/
+/* CSS name: page.css										*/
+/* Developer: MindPick Software LLC							*/
+/* Date: 2/3/2010											*/
+/*															*/
+/* Description: Style sheet for elements specific to	  	*/
+/* 		individual pages (i.e., not all pages) with all 	*/
+/*      media.												*/
+/*----------------------------------------------------------*/
+
+/*----------------------------------*/
+/* Styles for the Home page.	 	*/
+/*----------------------------------*/
+
+#welcome {
+	float: left;
+	display: inline;
+	width: 224px;
+	height: 138px;
+	margin: 20px 0 0 28px;
+	color: #f93;
+	font: 3em "Marker Felt",cursive;
+}
+
+#bien {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+}
+
+#welc {
+	position: relative;
+	bottom: 40px;
+	left: 30px;
+	display: block;
+}
+
+#photo_frame {
+	float: left;
+	width: 240px;
+	height: 183px;
+	background-color: black;
+	text-align: center;
+}
+
+#home_photos {
+	margin: 6px 0 0;
+}
+
+/* Only show the static photo, via JavaScript, if 
+   swfobject doesn't load Flash. */
+
+#no_flash_photo {
+	display: none;
+}
+
+/* Need to clear after graphics. */
+body#home .content_title {
+	clear: both;
+}
+
+ /*All but IE need padding to overcome collapsed margin.*/ 
+html>body#home .content_title {
+	padding-top: 1em;
+}
+
+/*------------------------------*/
+/* Styles for Info page.		*/
+/*------------------------------*/
+
+#storefront {
+	float: right;
+	margin: .9em 26px 1em 10px;
+	border: 6px solid black;
+}
+
+#creditcards {
+	margin: 0 0 0 71px;
+}
+
+#dir_instr {
+	display: none;
+}
+
+#map {
+	width: 460px;
+	height: 450px;
+	margin: 0 auto;
+}
+
+/*------------------------------*/
+/* Styles for About page.		*/
+/*------------------------------*/
+
+#about_photo {
+	float: left;
+	margin: 0 10px 0 24px;
+	border: 6px solid black;
+}
+
+/*----------------------------------*/
+/* Styles for the Specials page.	*/
+/*----------------------------------*/
+
+#specials_list {
+	margin: 24px 0 0;
+	text-align: center;
+}
+
+.specials_frame {
+	display: block;
+	width: 262px;
+	margin: 0 auto;
+	background-color: black;
+}
+
+.specials_photo {
+	float: left;
+	margin: 6px 6px 0;
+}
+
+.special_day {
+	color: #f90;
+}
+
+.special_bev1 {
+	display: block;
+	margin: .6em 0 0;
+}
+
+/*------------------------------*/
+/* Styles for Margaritas page.	*/
+/*------------------------------*/
+
+.left_marg_frame,.right_marg_frame {
+	display: inline;
+	width: 120px;
+	background-color: black;
+}
+
+.left_marg_frame {
+	float: left;
+	margin: 0 10px 0 65px;
+}
+
+.right_marg_frame {
+	float: right;
+	margin: 0 65px 0 10px;
+}
+
+.marg_photo {
+	margin: 6px 6px 0;
+}
+
+#marg_prices {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#marg_menu {
+	text-align: center;
+}
+
+.clear_w_height {     /* Give height so Safari, Opera allow text centering. */
+	clear: both;
+	height: 1px;
+}
+
+.vert_center_marg {
+	margin: 55px 5% 0;
+}
+
+/* We don't want collapsing margins. */
+body#margaritas .content_title {
+	display: -moz-inline-stack;
+	display: inline-block;
+}
+
+/*------------------------------*/
+/* Styles for Glossary page.	*/
+/*------------------------------*/
+
+body#glossary dt {
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+/*------------------------------*/
+/* Styles for Sitemap page.		*/
+/*------------------------------*/
+
+body#sitemap dt a {
+	color: #FFDF30;
+	font-weight: bold;
+}
+
+body#sitemap dd {
+	padding: 0 0 1em;
+}

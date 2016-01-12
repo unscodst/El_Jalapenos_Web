@@ -1,0 +1,30 @@
+/*----------------------------------------------------------*/
+/* Si Senor													*/
+/* CSS name: lent.css										*/
+/* Developer: MindPick Software LLC							*/
+/* Date: 3/30/2011											*/
+/*															*/
+/* Description: Style sheet for elements specific to	  	*/
+/* 		the Lenten Specials page with all media.			*/
+/*----------------------------------------------------------*/
+
+#lent_announce {
+	color: #FE2405;
+	font: italic bold 1.25em "Times New Roman", Times, serif;
+	margin-left: 200px;
+}
+
+#lent_announce a {
+	color: #FE2405;
+}
+
+#lent .menu_column {
+	margin-left: 40px;
+	margin-right: 50px;
+	width: auto;
+}
+
+* html #sisenor_menu {	/* IE6 hack to keep menu from dropping below locations. */
+	border: 1px dashed #FEFDE8;
+}
+

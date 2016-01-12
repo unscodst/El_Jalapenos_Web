@@ -1,0 +1,18 @@
+/*----------------------------------------------------------*/
+/* Client name												*/
+/* CSS name: fontfix.css									*/
+/* Developer: MindPick Software LLC							*/
+/* Date: mm/dd/yyyy											*/
+/*															*/
+/* Description: Style sheet for elements of all pages	 	*/
+/* 		and all media for just non-IE browsers.				*/
+/*----------------------------------------------------------*/
+
+/*------------------------------------------------------*/
+/* Set the font size on the body to 16px so we'll have	*/
+/* a consistent cascade. All subsequent font sizes		*/
+/* should be in em's.									*/
+/*------------------------------------------------------*/
+body {
+	font-size: 16px;
+}

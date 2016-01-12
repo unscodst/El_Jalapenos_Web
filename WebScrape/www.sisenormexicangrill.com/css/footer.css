@@ -1,0 +1,100 @@
+/*----------------------------------------------------------*/
+/* Si Senor													*/
+/* CSS name: footer.css										*/
+/* Developer: MindPick Software LLC							*/
+/* Date: 5/1/2011											*/
+/*															*/
+/* Description: Style sheet for footers on all pages	 	*/
+/* 		and all media.										*/
+/*----------------------------------------------------------*/
+
+
+/*----------------------------------------------------------*/
+/* Footer has a smaller font, slight drop from body.	 	*/
+/*----------------------------------------------------------*/
+#footer {
+	clear: both;
+	margin: 0 1px 0 30px;
+	color: #003300;
+	background-color: transparent;
+	font: normal .9em Arial, SunSans-Regular, sans-serif;
+	position: relative;
+}
+
+/*------------------------------------------------------*/
+/* Size and position sections of footer.				*/
+/*------------------------------------------------------*/
+#footer_border {
+	margin: 0 275px 0 52px;
+	height: 104px;
+	position: relative;
+}
+
+#bottom_left {
+	margin-left: -52px;
+	float: left;
+	position: relative;
+	display: inline;
+}
+
+#bottom_center {
+	float: left;
+	height: 20px;
+	width: 100%;
+	margin-top: 84px;
+	background-color: #385951;
+}
+
+#bottom_right {
+	margin: 84px -24px 0 0;
+	float: right;
+	position: relative;
+}
+
+#footer_content {
+	text-align: center;
+	margin: 5px 275px 0;
+	clear: both;
+}
+
+#footer_left {
+	text-align: left;
+	margin-left: -250px;
+	position: relative;
+	width: 250px;
+}
+
+#footer_right {
+	text-align: right;
+	margin: 0 -245px 0 0;
+	width: 235px;
+	float: right;
+	position: relative;
+}
+
+#footer_center {
+	width: 100%;
+	text-align: center;
+}
+
+#footer_left, #footer_center {
+	float:  left;
+}
+
+/* hack: Fix IE5, IE6 double float margin bug */
+* html #footer_left, * html #footer_right {
+	display: inline;
+}
+
+/*----------------------------------------------------------*/
+/* Links have no text decoration until hovered over.		*/
+/*----------------------------------------------------------*/
+#footer a {
+	color: #003300;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #003300;
+	text-decoration: underline;
+}

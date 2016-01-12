@@ -1,0 +1,204 @@
+/*----------------------------------------------------------*/
+/* Si Senor													*/
+/* CSS name: menu.css										*/
+/* Developer: MindPick Software LLC							*/
+/* Date: 4/29/2011											*/
+/*															*/
+/* Description: Style sheet for elements specific to	  	*/
+/* 		the Menu page with all media.						*/
+/*----------------------------------------------------------*/
+
+#menu .content_title {
+	margin-bottom: 0;
+}
+
+#menu_choice p {
+	margin: 0 0 .5em;
+}
+
+.menu_location {
+	color: #003300;
+	text-align: center;
+	margin: 0 0 1em;
+	padding: 0;
+	font: italic bold 1.72em "Times New Roman", Times, serif;
+}
+
+.location_btn {
+	background-color: #385951;
+	color: #FBE08F;
+	text-decoration: none;
+	border-left: 3px solid #007700;
+	border-top: 3px solid #007700;
+	border-right: 3px solid #004400;
+	border-bottom: 3px solid #004400;
+	padding: .1em .4em;
+}
+
+.location_btn:hover {
+	border-bottom-color: #007700;
+	border-right-color: #007700;
+	border-top-color: #004400;
+	border-left-color: #004400;
+}
+
+#sisenor_menu {
+	display: block;
+	margin: 0 0 50px 145px;
+}
+
+*:first-child+html #sisenor_menu {	/* hack: IE7 needs inline-block */
+	display: inline-block;
+}
+
+* html #sisenor_menu {
+	display: inline-block;	/* hack: ditto IE6 and earlier */
+}
+
+.submenu {
+	width: 100%;
+	margin: 0 11px;
+	text-align: center;
+}
+
+* html .submenu {	/* hack IE6 can't have margins here */
+	margin: 0;
+}
+
+#sel_label {
+	display: inline;
+	width: 12em;
+	margin: .2em 1% 0 9%;
+}
+
+#menu_sel {
+	border-style: inset;
+	border-color: #003300;
+	border-width: 2px 1px 1px 2px;
+	color: #001100;
+	background-color: #fefde8;
+}
+
+.menu_column {
+	display: inline;
+	float: left;
+	margin-left: 12px;
+	text-align: left;
+	width: 45%;
+	margin-right: 12px;
+}
+
+.menu_1column {
+	width: 471px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.submenu h3 {
+	padding-top: 1em;
+	color: #aa0000;
+	font: italic small-caps bold 1.5em "Times New Roman",Times,serif;
+	text-align: center;
+}
+
+#lunch h3, #burrocombo h3 {
+	margin-bottom: 0 !important;
+}
+
+.submenu .rule {
+	clear: both;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 1em;
+	border-bottom: 7px double #cc3300;
+	text-align: center;
+}
+
+.item {
+	display: block;
+	width: 85%;
+	color: #cc6600;
+}
+
+* html .item_ie_fix {
+	display: inline;
+}
+
+.item_descr {
+	margin: 0;
+	font-style: italic;
+}
+
+.item_1column {
+	display: block;
+	width: 415px;
+	color: #cc6600;
+}
+
+.subitem {
+	display: block;
+	width: 181px;
+	margin-top: .25em;
+}
+
+.price {
+	float: right;
+	margin-top: -1.3em;
+}
+
+.side_price {
+	width: 55px;
+}
+
+.side_dish {
+	text-align: left;
+}
+
+.side_type {
+	margin-left: 20px;
+	text-align: left;
+}
+
+.submenu table {
+	width: 100%;
+	border-collapse: collapse;
+	color: #001100;   /* For IE5/5.5 inheritance problem */
+	font-size: 1em;   /* For IE5/5.5 inheritance problem */
+	text-align: right;
+}
+
+.menu_photo_frame {
+	display: block;
+	width: 228px;
+	background-color: #a52a2a;
+	margin: 0 auto 1em;
+}
+
+.menu_photo {
+	display: inline;
+	margin: 6px 6px 0;
+}
+
+.menu_box {
+	margin: 0 0 1em;
+	border: 1px solid #cc6600;
+	padding: 0 5px;
+}
+
+.fajitas {
+	padding: 0 8px;
+}
+
+.combos {
+	float: left;
+	width: 33%;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.extras {
+	float: left;
+	width: 48%;
+	margin-bottom: 1em;
+	text-align: center;
+}

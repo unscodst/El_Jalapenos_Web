@@ -1,0 +1,308 @@
+/*----------------------------------------------------------*/
+/* Si Senior												*/
+/* CSS name: main.css										*/
+/* Developer: MindPick Software LLC							*/
+/* Date: 11/14/2011											*/
+/*															*/
+/* Description: Style sheet for elements of all pages	 	*/
+/* 		and all media.										*/
+/*----------------------------------------------------------*/
+
+
+			/*-----------------------------*/
+			/*** Generic HTML selectors. ***/
+			/*-----------------------------*/
+			
+/*-----------------------------------------*/
+/* Reset so all browsers format the same.  */
+/*-----------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	line-height: 1.0;
+}
+h1, h2, h3, h4, h5, h6, p, pre, ul, ol, dl, address, fieldset, menu, dir, form {
+	margin: 1em 0;
+}
+blockquote {
+	margin: 1em 40px;
+}
+li, dd {
+	margin-left: 40px;
+}
+fieldset {
+	padding: .5em;
+}
+select {
+	min-width: 1.5em;  /* Fixes bug - dropdown arrow hidden - in older Firefox when margin, padding 0 */
+}
+abbr, acronym {
+	border-bottom: 1px dotted #333;	cursor: help;}
+hr {
+	border-style: inset;
+	border-width: 1px;
+}
+
+/*---------------------------------------------*/
+/* Keeps Firefox from putting border on images */
+/*---------------------------------------------*/
+img {
+	border: none;  
+}
+/*-------------------------------------------------------------*/
+/* Set overall background color and image and some font info.  */
+/*-------------------------------------------------------------*/
+body {
+	color: black;
+	line-height: 1;
+	text-align: center;
+	background: #FEFDE8 url(../images/stuccobkgd.jpg) repeat left top;
+}
+
+
+
+				/*-------------------*/
+				/*** Page template ***/
+				/*-------------------*/
+/*------------------------------------------------------------------*/
+/* page_body is the section of the page between the header and		*/
+/* the footer. Set margins to center the content. Also, set default */
+/* content font info, including 12px font size. Give a 30px border	*/
+/* at the top and enough padding for a total (with inside elements)	*/
+/* of 60px on the sides.											*/
+/*------------------------------------------------------------------*/
+#page_body {
+	display: block;
+	min-width: 865px;
+	max-width: 1100px;
+	margin: 0 auto;
+	font: normal .875em Arial, Helvetica, sans-serif;
+	line-height: 1.3;
+	text-align: left;
+	padding: 30px 59px 0 30px;
+	position: relative;
+	color: #003300;
+}
+
+* html #page_body {
+	width: 950px;		/* hack: don't use fluid layout for IE6 */
+	overflow: hidden;
+}
+
+/*------------------------------------------------------------------*/
+/* Position the logos absolutely and put them above (z-index) the	*/
+/* other page content. The logo for the Fairview location is in		*/
+/* the upper left. The logo for the Westlake location is in the		*/
+/* lower right. In the page flow, empty DIVs are positioned to let	*/
+/* text flow around the logos.										*/ 
+/*------------------------------------------------------------------*/
+#fairview_logo {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	z-index: 10;
+}
+
+#fairview_logo_spacer {
+	float: left;
+	width: 145px;
+	height: 200px;
+}
+
+#westlake_logo {
+	position: absolute;
+	z-index: 10;
+	bottom: -25px;
+	right: -33px;
+}
+
+* html #westlake_logo {		 /* hack: IE6 positions differently */
+	left: 710px;
+	top: -73px;
+}
+
+#westlake_logo_spacer {
+	float: right;
+	width: 270px;
+	height: 65px;
+}
+
+/*------------------------------------------------------------------*/
+/* Set up the actual content section with a green border on both	*/
+/* sides. Because of the locations sidebar, indent is more on		*/
+/* the left. The margin on the right is 1px to smooth out the curve	*/
+/* at the top. It's 30px on the left to put the border "under" the	*/
+/* blanket in the logo. Use the !important bug to set min-height	*/
+/* in IE6 and earlier.												*/
+/*------------------------------------------------------------------*/                                         
+#page_content {
+	color: #001100;
+	border-right: 8px solid #385951;
+	border-left: 8px solid #385951;
+	padding: 30px 40px 0 95px;
+	background: transparent url(../images/trin.gif) no-repeat right top;
+	margin: 0 1px 0 30px;
+	position: relative;
+	min-height: 715px;
+	_height: 715px;
+	overflow: visible;
+}
+
+#locations {
+	float: left;
+	width: 220px;
+	clear: left;
+	color: #FE2405;
+	font: 1.2em/1.2 "Lucida Handwriting", "Apple Chancery", "Zapf Chancery", "Monotype Corsiva", "URW Chancery L", cursive;
+	text-shadow: #000000 2px 2px 0;
+	filter: dropshadow(color=#a0a0a0, offX=1, offY=1);
+	margin: 50px 0 25px -75px;
+}
+
+/* hack: Fix IE5, IE6 double float margin bug */
+* html #locations {
+	display: inline;
+}
+
+/* hack: Now reset Safari 3 to one larger than normal. */
+/*\*/
+html*#locations {
+	[text-shadow: #000000 1px 1px 0;
+	text-shadow: #000000 2px 2px 0;
+	]text-shadow: #000000 1px 1px 0;
+}
+/**/
+
+#locations .plain {
+	font-family: Arial, SunSans-Regular, sans-serif;
+	display: block;
+}
+
+#locations .facebookicon {
+	margin-left: 1em;
+}
+
+#locations .facebookicon img {
+	margin-bottom: -0.15em;
+}
+
+#locations .phone {
+	display: block;
+	margin-top: 0.5em;
+}
+
+/*-----------------------------------*/
+/* Generic classes for floats.		 */
+/*-----------------------------------*/
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+
+
+				/*------------------*/
+				/*** Page formats ***/
+				/*------------------*/
+/*--------------------------*/
+/* Format the page content. */
+/*--------------------------*/
+.info_title {
+	margin: 0;
+	color: black;
+	font: bold 1.3em "Comic sans MS", cursive, sans-serif;
+}
+
+.info_content {
+	color: black;
+	font: 1.1em Arial, SunSans-Regular, sans-serif;
+}
+
+.content_title {
+	color: #003300;
+	font: italic bold 2em "Times New Roman", Times, serif;
+	text-align: center;
+}
+
+.content_subtitle {
+	margin: 1.5em 0 1em;
+	color: #003300;
+	font: italic bold 1.4em "Times New Roman", Times, serif;
+}
+
+.content_link {
+	color: blue;
+}
+
+#notice h2 {
+	color: #003300;
+	font: italic bold 1.5em "Times New Roman", Times, serif;
+	margin-top: 2em;
+	text-align: center;
+}
+
+.captioned_photo {
+	color: #ffc800;
+	font-size: smaller;
+	font-style: italic;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.txt_browse {
+	display: none; /* Text to display only in text-based browsers */
+}
+
+
+				/*---------------------------*/
+				/*** Miscellaneous styles. ***/
+				/*---------------------------*/
+.ital {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.small {
+	font-size: smaller;
+}
+
+.center {
+	text-align: center;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.normal {
+	font-weight: normal;
+}
+
+
+/* hack: Safari 2 text-shadow offsets need to be one larger than	*/
+/* standard, all other browsers are OK with 1px. Add hash after		*/
+/* rule so all but Safari 2 use it. Also, Safari 2 can't			*/
+/* handle bold cursive fonts, so set here only.						*/
+/* This rule must be last in the css file!							*/
+#locations {
+	text-shadow: 1px 1px 0 #404040;
+	font-weight: bold;#
+}

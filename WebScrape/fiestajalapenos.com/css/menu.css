@@ -1,0 +1,167 @@
+/*----------------------------------------------------------*/
+/* Fiesta Jalapenos											*/
+/* CSS name: menu.css										*/
+/* Developer: MindPick Software LLC							*/
+/* Date: 5/5/2011											*/
+/*															*/
+/* Description: Style sheet for elements specific to	  	*/
+/* 		the Menu page with all media.						*/
+/*----------------------------------------------------------*/
+
+.submenu {
+	width: 498px;
+	margin: 0 11px;
+	text-align: center;
+}
+
+#sel_label {
+	display: inline;
+	float: left;
+	width: 12em;
+	margin: .2em 1% 0 9%;
+}
+
+#menu_sel {
+	border-style: inset;
+	border-color: #003300;
+	border-width: 2px 1px 1px 2px;
+	color: #ffdf30;
+	background-color: #003a00;
+}
+
+.menu_column {
+	display: inline;
+	float: left;
+	width: 228px;
+	margin-left: 15px;
+	text-align: left;
+}
+
+.menu_1column {
+	width: 471px;
+	margin: 0 12px 0 15px;
+	text-align: left;
+}
+
+.submenu h3 {
+	padding-top: 1em;
+	color: #cc3300;
+	font: bold 1.5em "Comic sans MS",cursive,sans-serif;
+	text-align: center;
+}
+
+#lunch h3,#burrocombo h3 {
+	margin-bottom: 0!important;
+}
+
+.submenu .rule {
+	clear: both;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 1em;
+	border-bottom: 7px double #c30;
+	text-align: center;
+}
+
+.item {
+	display: block;
+	width: 180px;
+	color: #ff9900;
+}
+
+* html .item_ie_fix {
+	display: inline;
+}
+
+.item_descr {
+	margin: 0;
+	font-style: italic;
+}
+
+.item_1column {
+	display: block;
+	width: 415px;
+	color: #ff9900;
+}
+
+.subitem {
+	display: block;
+	width: 181px;
+	margin-top: .25em;
+}
+
+.price {
+	float: right;
+	margin-top: -1.25em;
+}
+
+.side_price {
+	width: 55px;
+}
+
+.side_dish {
+	text-align: left;
+}
+
+.side_type {
+	margin-left: 20px;
+	text-align: left;
+}
+
+.submenu table {
+	width: 100%;
+	border-collapse: collapse;
+	color: #FFDF30;   /* For IE5/5.5 inheritance problem */
+	font-size: 1em;   /* For IE5/5.5 inheritance problem */
+	text-align: right;
+}
+
+.menu_photo_frame {
+	display: block;
+	width: 228px;
+	background-color: black;
+	margin: 0 auto 1em;
+}
+
+.menu_photo {
+	display: inline;
+	margin: 6px 6px 0;
+}
+
+.menu_box {
+	margin: 0 0 1em;
+	border: 1px solid #F90;
+	padding: 0 5px;
+}
+
+.fajitas {
+	font-size: 1.1em;
+}
+
+.combos {
+	float: left;
+	width: 33%;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.extras {
+	float: left;
+	width: 50%;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+#fajita_photo .menu_photo_frame {
+	width: 100%;
+}
+
+#fajita_photo .menu_photo {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.new_item {
+	vertical-align: top;
+	padding-right: 4px;
+}

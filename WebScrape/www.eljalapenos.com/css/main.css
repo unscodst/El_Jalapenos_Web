@@ -1,0 +1,188 @@
+/*----------------------------------------------------------*/
+/* El Jalapenos												*/
+/* CSS name: main.css										*/
+/* Developer: MindPick Software LLC							*/
+/* Date: 2/9/2012											*/
+/*															*/
+/* Description: Style sheet for elements of all pages	 	*/
+/* 		and all media.										*/
+/*----------------------------------------------------------*/
+
+
+			/*-----------------------------*/
+			/*** Generic HTML selectors. ***/
+			/*-----------------------------*/
+			
+/*-----------------------------------------*/
+/* Reset so all browsers format the same.  */
+/*-----------------------------------------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, fieldset, address { margin:1em 5%; }
+li, dd { margin-left: 5%; }
+fieldset { padding: .5em; }
+select { min-width: 1.5em; }
+
+/*----------------------------------------------*/
+/* Set overall background color and font info.  */
+/*----------------------------------------------*/
+body {
+	color: black;
+	background-color: #fffe95;
+	line-height: 1em;
+	text-align: center;		/* To center page in IE5. */
+}
+
+/*---------------------------------------------*/
+/* Keeps Firefox from putting border on images */
+/*---------------------------------------------*/
+img {
+	border: none;  
+}
+
+
+
+				/*----------------------------*/
+				/*** Page layout (3 column) ***/
+				/*----------------------------*//*-------------------------------------------------------------------*/
+/* page_body is the section of the page between the header and		*/
+/* the footer. Set margins to center the content. Also, set default */
+/* content font info, including 12px font size.                     */
+/*------------------------------------------------------------------*/
+#page_body {
+	display: block;
+	clear: both;
+	width: 880px;
+	margin: 0 auto;
+	font: normal .75em/1.25em Verdana, Arial, SunSans-Regular, sans-serif;
+	text-align: left;
+}
+
+/*---------------------------------------------------------------*/
+/* Set up the columns. In the HTML, the order of the columns is  */
+/* center (content), right (address/hours info), then left       */
+/* (navigation). This is so text browsers display the page in    */
+/* that order.                                                   */
+/*---------------------------------------------------------------*/                                         
+#navigation, #page_content, #store_info {
+	position: relative;
+	float: left;
+	display: inline;   /* Fix for IE double float-margin bug. */ 
+}
+
+#navigation, #store_info {
+	width: 180px;
+}
+	
+#navigation {
+	overflow: hidden;
+	width: 180px;
+	margin-left: -880px;
+}
+
+#page_content {
+	overflow: auto; /* Makes page size fit content length-wise. */
+	width: 520px;
+	margin-left: 180px;
+	color: #ffff99;
+	background: #002211 url("../images/center-bkgd.gif") repeat-y;
+}
+
+/*-----------------------------------------------------------*/
+/* Clear to make columns the same size vertically when page  */
+/* is resized.                                               */
+/*-----------------------------------------------------------*/
+.clear {
+	display: block;
+	clear: both;
+}
+
+
+/*--------------------------*/
+/* Format the page content. */
+/*--------------------------*/
+#info_box .facebookicon {
+	margin-left: 2em;
+}
+
+#info_box .facebookicon img {
+	margin-bottom: -.4em;
+}
+
+.info_title {
+	margin: 0;
+	color: #006633;
+	font: bold 1.3em "Comic sans MS", cursive, sans-serif;
+}
+
+.info_content {
+	color: #Ff3300;
+	font: 1.1em Arial, SunSans-Regular, sans-serif;
+}
+
+.content_title {
+	color: #ffff66;
+	font: bold 1.7em/1.3em "Comic sans MS", cursive, sans-serif;
+}
+
+.content_subtitle {
+	margin: 1.5em 5% 1em;
+	color: #ffff66;
+	font: bold 1.3em "Comic sans MS", cursive, sans-serif;
+}
+
+.content_link {
+	color: #CC3333;
+	font-weight: bold;
+}
+
+#notice h2 {
+	color: #ffff66;
+	font: bold 1.5em/1.3em "Comic sans MS", cursive, sans-serif;
+	margin-top: 2em;
+}
+
+#notice a {
+	color: #ffff66;
+	text-decoration: underline;
+}
+
+.captioned_photo {
+	font-size: smaller;
+	font-style: italic;
+	text-align: center;
+}
+
+.txt_browse {
+	display: none; /* Text to display only in text-based browsers */
+}
+
+
+				/*---------------------------*/
+				/*** Miscellaneous styles. ***/
+				/*---------------------------*/
+.ital {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.small {
+	font-size: smaller;
+}
+
+.center {
+	text-align: center;
+}
+
+.justify {
+	text-align: justify;
+}
