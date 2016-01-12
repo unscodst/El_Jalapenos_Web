@@ -215,7 +215,7 @@ html, body {
     height: 300px;
     width: auto;
     background-color: #f3f3f3;
-    background: url('/El_Jalapenos/img/chickenpoblano.jpg') center 30% no-repeat;
+    background: url('img/chickenpoblano.jpg') center 30% no-repeat;
     background-size: cover;
     margin-bottom: 12px;
 }
@@ -224,7 +224,7 @@ html, body {
     height: auto;
     width: auto;
     background-color: #f3f3f3;
-    background: url('/El_Jalapenos/img/storefront.jpg') center no-repeat;
+    background: url('img/storefront.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -232,14 +232,14 @@ html, body {
     height: 300px;
     width: auto;
     background-color: #f3f3f3;
-    background: url('/El_Jalapenos/img/storefront.jpg')  30% no-repeat;
+    background: url('img/storefront.jpg')  30% no-repeat;
     background-size: cover;
 }
 
 .special {
     width: 120px;
     height: 120px;
-    background: url('/El_Jalapenos/img/special1.jpg') center 30% no-repeat;
+    background: url('img/special1.jpg') center 30% no-repeat;
     background-size:cover;
     position: relative;
     padding: 10px;
