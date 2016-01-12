@@ -43,7 +43,7 @@ limitations under the License
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.deep_purple-pink.min.css">
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.amber-orange.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <style>
             .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
@@ -59,10 +59,9 @@ limitations under the License
             <header class="mdl-layout__header mdl-layout__header--waterfall ">
 
                 <!-- Top row, always visible -->
-                <div class="mdl-layout__header-row">
+                <div class="mdl-layout__header-row mdl-color--primary">
 
                     <!-- Title -->
-
                     <div class="mdl-layout-spacer"></div>
                     <span class="mdl-layout-title">El Jalapenos</span>
                 </div>
@@ -92,48 +91,107 @@ limitations under the License
             <main class="mdl-layout__content">
                 <div class="page-content">
                     <div class="dishes"></div>
+
+
+                    <!-- Square card -->
+                    <style>
+                        .demo-card-square.mdl-card {
+                            width: 320px;
+                            height: 320px;
+                        }
+                        .demo-card-square > .mdl-card__title {
+                            color: #fff;
+                            background-color: #46B6AC;
+                        }
+                    </style>
+
+                    <div class="mdl-grid" style="max-width: 1010px;">
+                        <div class="demo-card-square mdl-card mdl-cell mdl-cell--4-col ">
+                            <div class="mdl-card__supporting-text">
+                                Instagram
+                            </div>
+                        </div>
+                        <div class="demo-card-square mdl-card mdl-cell mdl-cell--4-col">
+                            <div class="mdl-card__supporting-text">
+                                Facebook
+                            </div>
+                        </div>
+                        <div class="demo-card-square mdl-card mdl-cell mdl-cell--4-col">
+                            <div class="mdl-card__supporting-text">
+                                Twitter
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mdl-typography--text-center" style="font-size:34px;">Specials</div>
+                        <div class="mdl-grid" style="max-width: 1008px;">
+                            <div class="mdl-typography--text-center">Monday:
+                                <div class="special"></div>
+                            </div>
+                            <div class="mdl-typography--text-center">Tuesday<div class="special"></div></div>
+                            <div class="mdl-typography--text-center">Wednesday<div class="special"></div></div>
+                            <div class="mdl-typography--text-center">Thursday<div class="special"></div></div>
+                            <div class="mdl-typography--text-center">Friday<div class="special"></div></div>
+                            <div class="mdl-typography--text-center">Saturday<div class="special"></div></div>
+                            <div class="mdl-typography--text-center">Sunday<div class="special"></div></div>
+
+                        </div>
+                    </div>
+                    <div class="dishes"></div>
+                    <div class="mdl-typography--text-center" style="font-size:34px;">Menu</div>
                     <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--4-col">
-                            Facebook
-                        </div>
-                        <div class="mdl-cell mdl-cell--4-col">
-                            Instagram
-                        </div>
-                        <div class="mdl-cell mdl-cell--4-col">
-                            Twitter
-                        </div>
 
+                        <div class="mdl-tabs mdl-js-tabs">
+                            <div class="mdl-tabs__tab-bar">
+                                <a href="#tab1-panel" class="mdl-tabs__tab is-active">Appetizers</a>
+                                <a href="#tab2-panel" class="mdl-tabs__tab">Lunch Only</a>
+                                <a href="#tab3-panel" class="mdl-tabs__tab">Home Specialties</a>
+                                <a href="#tab4-panel" class="mdl-tabs__tab">Fajitas and Steaks</a>
+                            </div>
+                            <div class="mdl-tabs__panel is-active" id="tab1-panel">
+                                <p>Antojitos Menu</p>
+                            </div>
+                            <div class="mdl-tabs__panel" id="tab2-panel">
+                                <p>Almuerzos Menu</p>
+                            </div>
+                            <div class="mdl-tabs__panel" id="tab3-panel">
+                                <p>Especialidades de la Casa Menu</p>
+                            </div>
+                            <div class="mdl-tabs__panel" id="tab4-panel">
+                                <p>Fajitas y Filetes Menu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-layout__header-row mdl-color--primary"></div>
+                    
+                    <div class="mdl-typography--text-center">
+                        <div>Antojitos – Appetizers</div>
+                        <div>Almuerzos – Lunch Only</div>
+                        <div>Especialidades de la Casa –
+                            Home Specialties</div>
+                        <div>Fajitas y Filetes – Fajitas and Steaks</div>
+                        <div>Mariscos – Seafood</div>
+                        <div>Pollo – Chicken</div>
+                        <div>Vegetarianos – Vegetarian</div>
+                        <div>Sopas y Ensaladas – Soups and Salads</div>
+                        <div>Super Burros</div>
+                        <div>A la Carte – Side Orders</div>
+                        <div>Peopleú de los Niños –
+                            Children's Menu</div>
+                        <div>Postres – Desserts</div>
+                    </div>
+                    <div class="mdl-layout__header-row mdl-color--primary-dark"></div>
+
+                    <div class="map-area">      
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11955.40152449082!2d-81.7684595!3d41.4858433!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4493293e49b2a03c!2sEl+Jalapenos+Authentic+Mexican+Restaurant!5e0!3m2!1sen!2sus!4v1452573485931" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
                     </div>
 
 
-                    <div>     
-                        <div class="mdl-layout__header mdl-color--primary">
-                            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-                                <h3>Menu</h3>
-                            </div>
-                            <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-                                <a href="#overview" class="mdl-layout__tab is-active">Antojitos – Appetizers</a>
-                                <a href="#features" class="mdl-layout__tab">Almuerzos – Lunch Only</a>
-                                <a href="#features" class="mdl-layout__tab">Especialidades de la Casa –
-                                    Home Specialties</a>
-                                <a href="#features" class="mdl-layout__tab">Fajitas y Filetes – Fajitas and Steaks</a>
-                                <a href="#features" class="mdl-layout__tab">Mariscos – Seafood</a>
-                                <a href="#features" class="mdl-layout__tab">Pollo – Chicken</a>
-                                <a href="#features" class="mdl-layout__tab">Vegetarianos – Vegetarian</a>
-                                <a href="#features" class="mdl-layout__tab">Sopas y Ensaladas – Soups and Salads</a>
-                                <a href="#features" class="mdl-layout__tab">Super Burros</a>
-                                <a href="#features" class="mdl-layout__tab">A la Carte – Side Orders</a>
-                                <a href="#features" class="mdl-layout__tab">Peopleú de los Niños –
-                                    <a href="#features" class="mdl-layout__tab">Postres – Desserts</a>
-                                    <a href="#features" class="mdl-layout__tab">Bebidas – Beverages</a>
-                                    <a href="#features" class="mdl-layout__tab">Bebidas – Beverages</a>
-                                    </div>
-                            </div>
-                        </div>
 
 
 
-                    </div>
                     </main>
                 </div>
             <script src="js/material.min.js"></script>
