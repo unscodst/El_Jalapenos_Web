@@ -214,17 +214,16 @@ html, body {
     position: relative;
     height: 300px;
     width: auto;
-    background-color: #f3f3f3;
-    background: url('img/chickenpoblano.jpg') center 30% no-repeat;
+    background-color: #d3b32c;
+    background: url('../img/new/Authentic-Mexican-Food.jpg') center no-repeat;
     background-size: cover;
-    margin-bottom: 12px;
 }
 
 .social {
     height: auto;
     width: auto;
     background-color: #f3f3f3;
-    background: url('img/storefront.jpg') center no-repeat;
+    background: url('../img/new/tray.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -232,19 +231,42 @@ html, body {
     height: 300px;
     width: auto;
     background-color: #f3f3f3;
-    background: url('img/storefront.jpg')  30% no-repeat;
+    background: url('../img/new/img_3731.jpg')  30% no-repeat;
     background-size: cover;
 }
 
 .special {
     width: 120px;
     height: 120px;
-    background: url('img/special1.jpg') center 30% no-repeat;
+    background: url('../img/new/margarita-mexican-dishes.jpg') center no-repeat;
     background-size:cover;
-    position: relative;
-    padding: 10px;
-    margin: 2px;
 }
+
+.long-special {
+    background: url('../img/new/margarita-mexican-dishes.jpg') no-repeat;
+    background-size: contain;
+    background-color: #fff;
+}
+.title-special {
+    margin-left: 294px;
+    background-color: #fff;
+}
+.support-special > p {
+    background-color: #fff;
+    float: right;
+    width: 304px;
+    height: 120px;
+    padding-left: 15px;
+}
+
+.mdl-card__media {
+	margin: 0;
+}
+.mdl-card__media > img {
+    max-width: 100%;
+}
+
+
 
 .clear {
     clear: both;
